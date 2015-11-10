@@ -37,6 +37,7 @@ component {
         }
 
         binder.listener(class = 'coldbox.system.aop.Mixer');
+        // Call configure again to reload the listeners with our new listener
         wirebox.configure(binder, {});
     }
 
