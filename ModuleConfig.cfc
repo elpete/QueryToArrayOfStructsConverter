@@ -32,13 +32,18 @@ component {
 
     private function addAOPListenerIfNeeded() {
 
-        if (AOPListenerIsRegistered()) {
-            return;
-        }
+		if (AOPListenerIsRegistered()) {
+			return;
+		}
 
-        binder.listener(class = 'coldbox.system.aop.Mixer');
-        wirebox.configure(binder, {});
-    }
+		var mixer = new coldbox.system.aop.Mixer();
+		mixer.configure( wirebox, {} );
+		controller.getInterceptorService().registerInterceptor(
+            interceptorObject = mixer,
+            interceptorName = "AOPMixer"
+        );
+
+	}
 
     private function AOPListenerIsRegistered() {
         var listeners = binder.getListeners();
