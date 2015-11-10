@@ -1,0 +1,34 @@
+{
+    "name": "QueryToArrayOfStructsConverter",
+    "version": "1.0.0",
+    "author": "Eric Peterson",
+    "homepage": "https://github.com/elpete/QueryToArrayOfStructsConverter",
+    "documentation": "https://github.com/elpete/QueryToArrayOfStructsConverter",
+    "repository": {
+        "type": "git",
+        "URL": "https://github.com/elpete/QueryToArrayOfStructsConverter"
+    },
+    "bugs": "https://github.com/elpete/QueryToArrayOfStructsConverter/issues",
+    "slug": "QueryToArrayOfStructsConverter",
+    "shortDescription": "ColdBox/WireBox Aspect to convert queries to arrays of structs",
+    "description": "ColdBox/WireBox Aspect to convert queries to arrays of structs",
+    "type": "modules",
+    "keywords": [
+        "aspect",
+        "query",
+        "struct"
+    ],
+    "private": false,
+    "projectURL": "https://github.com/elpete/QueryToArrayOfStructsConverter",
+    "license": [
+        {
+            "type": "MIT",
+            "URL": "https://github.com/elpete/QueryToArrayOfStructsConverter/blob/master/LICENSE"
+        }
+    ],
+    "ignore": [
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
