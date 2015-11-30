@@ -10,7 +10,7 @@ component implements="coldbox.system.aop.MethodInterceptor" {
         return queryToArrayOfStructs(q);
     }
 
-    private array function queryToArrayOfStructs(required query q) {
+    private array function queryToArrayOfStructs(required any q) {
         var results = [];
         for (var row in arguments.q) {
             results.append(row);
