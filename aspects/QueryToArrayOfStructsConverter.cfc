@@ -1,6 +1,6 @@
 component implements="coldbox.system.aop.MethodInterceptor" {
 
-    property converter inject="Converter";
+    property name="converter" inject="Converter";
 
     /**
      * @hint Invoke an AOP method invocation

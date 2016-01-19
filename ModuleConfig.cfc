@@ -9,6 +9,8 @@ component {
 
 	function configure() {
 
+        binder.mapDirectory('#moduleMapping#.models');
+
         addAOPListenerIfNeeded();
 
         binder.mapAspect('QueryToArrayOfStructsConverter')
