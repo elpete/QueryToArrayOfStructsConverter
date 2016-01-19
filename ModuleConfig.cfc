@@ -4,8 +4,8 @@ component {
 	this.author        = 'Eric Peterson';
 	this.webURL        = 'https://github.com/elpete/QueryToArrayOfStructsConverter';
 	this.description   = 'ColdBox/WireBox Aspect to convert queries to arrays of structs';
-	this.version       = '1.0.0';
-	this.autoMapModels = false;
+	this.version       = '1.1.0';
+	this.autoMapModels = true;
 
 	function configure() {
 
