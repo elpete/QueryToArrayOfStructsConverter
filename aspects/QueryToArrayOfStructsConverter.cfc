@@ -1,6 +1,6 @@
 component implements="coldbox.system.aop.MethodInterceptor" {
 
-    property name="converter" inject="Converter";
+    property name="converter" inject="Converter@queryToArrayOfStructsConverter";
 
     /**
      * @hint Invoke an AOP method invocation

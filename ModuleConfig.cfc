@@ -9,12 +9,15 @@ component {
 
 	function configure() {
 
-        binder.mapDirectory('#moduleMapping#.models');
-
         addAOPListenerIfNeeded();
 
+        var mapping = moduleMapping;
+        if ( left( moduleMapping, 1 ) == "/" ) {
+            mapping = mid( moduleMapping, 2, len( moduleMapping ) );
+        }
+
         binder.mapAspect('QueryToArrayOfStructsConverter')
-              .to('#moduleMapping#.aspects.QueryToArrayOfStructsConverter');
+              .to('#mapping#.aspects.QueryToArrayOfStructsConverter');
 
         // // Bind by component annotation
         binder.bindAspect(
