@@ -1,10 +1,10 @@
 {
     "name":"QueryToArrayOfStructsConverter",
-    "version":"1.1.1",
+    "version":"1.1.2",
     "author":"Eric Peterson",
     "homepage":"https://github.com/elpete/QueryToArrayOfStructsConverter",
     "documentation":"https://github.com/elpete/QueryToArrayOfStructsConverter",
-    "location":"elpete/QueryToArrayOfStructsConverter#v1.1.1",
+    "location":"elpete/QueryToArrayOfStructsConverter#v1.1.2",
     "scripts":{
         "postVersion":"package set location='elpete/QueryToArrayOfStructsConverter#v`package version`'",
         "onRelease":"publish",
